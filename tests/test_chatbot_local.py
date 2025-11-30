@@ -2,15 +2,13 @@ import os
 import json
 import tempfile
 import pytest
-from chatbot import ExotracChatbot
-
+from exotracdemo.chatbot import ExotracChatbot
 
 def test_local_init_and_load_dataset():
     bot = ExotracChatbot(local=True)
     assert hasattr(bot, 'training_data')
     assert 'core_services' in bot.training_data
     assert 'email_templates' in bot.training_data
-
 
 def test_local_chat_initial_interest_and_email_generation(tmp_path):
     bot = ExotracChatbot(local=True)
@@ -26,7 +24,6 @@ def test_local_chat_initial_interest_and_email_generation(tmp_path):
     assert 'subject' in email
     assert 'Optimize Your Yard Operations' in email['subject']
     assert email['from_email'] == bot.training_data['company_info']['email']
-
 
 def test_generate_email_personalization_and_save(tmp_path):
     bot = ExotracChatbot(local=True)
