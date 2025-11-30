@@ -1,0 +1,20 @@
+======================================================================
+EXOTRAC EMAIL - SAVED FOR REVIEW
+======================================================================
+
+NOTE: SMTP credentials not configured.
+This email has been saved to file for manual sending.
+
+To: prospect@example.com
+From: support@exotrac.com
+Subject: Test Email - Exotrac Solutions
+Type: test
+Timestamp: 2025-11-30T17:58:21.018889
+
+----------------------------------------------------------------------
+EMAIL BODY:
+----------------------------------------------------------------------
+
+This is a test email from Exotrac AI Chatbot.
+
+======================================================================
